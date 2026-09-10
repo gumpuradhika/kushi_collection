@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kushi Collection Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+        <h1>Kushi Collection Store</h1>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#dresses">Dresses</a></li>
+            <li><a href="#sarees">Sarees</a></li>
+            <li><a href="#kids">Kids</a></li>
+            <li><a href="#cart">Cart 🛒</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section id="home" class="hero">
+
+        <h2>Welcome to Kushi Collection Store</h2>
+
+        <p>
+            Beautiful Ladies Dresses, Sarees and Kids Dresses
+        </p>
+
+        <a href="#dresses">
+            <button>Shop Now</button>
+        </a>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories">
+
+        <h2>Our Categories</h2>
+
+        <div class="category-container">
+
+            <!-- DRESSES -->
+
+            <div class="category">
+
+                <h3>Ladies Dresses</h3>
+
+                <a href="#dresses">
+                    <button>View Collection</button>
+                </a>
+
+            </div>
+
+
+            <!-- SAREES -->
+
+            <div class="category">
+
+                <h3>Sarees</h3>
+
+                <a href="#sarees">
+                    <button>View Collection</button>
+                </a>
+
+            </div>
+
+
+            <!-- KIDS -->
+
+            <div class="category">
+
+                <h3>Kids Dresses</h3>
+
+                <a href="#kids">
+                    <button>View Collection</button>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!--                 LADIES DRESSES                    -->
+    <!-- ================================================= -->
+
+    <section class="products" id="dresses">
+
+        <h2>Ladies Dresses</h2>
+
+        <div class="product-container">
+
+
+            <!-- DRESS 1 -->
+
+            <div class="product-card">
+
+                <img src="./images/photo1.jpeg"
+                     alt="Designer Ladies Dress">
+
+                <h3>Designer Ladies Dress</h3>
+
+                <p class="price">₹899</p>
+
+                <button onclick="addToCart('Designer Ladies Dress', 899)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+
+            <!-- DRESS 2 -->
+
+            <div class="product-card">
+
+                <img src="./images/photo 2.jpeg"
+                     alt="Elegant Ladies Dress">
+
+                <h3>Elegant Ladies Dress</h3>
+
+                <p class="price">₹799</p>
+
+                <button onclick="addToCart('Elegant Ladies Dress', 799)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+
+            <!-- DRESS 3 -->
+
+            <div class="product-card">
+
+                <img src="./images/photo 3.jpeg"
+                     alt="Beautiful Ladies Dress">
+
+                <h3>Beautiful Ladies Dress</h3>
+
+                <p class="price">₹899</p>
+
+                <button onclick="addToCart('Beautiful Ladies Dress', 899)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+
+            <!-- DRESS 4 -->
+
+            <div class="product-card">
+
+                <img src="./images/dress_6.jpeg"
+                     alt="Stylish Ladies Dress">
+
+                <h3>Stylish Ladies Dress</h3>
+
+                <p class="price">₹999</p>
+
+                <button onclick="addToCart('Stylish Ladies Dress', 999)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+
+            <!-- DRESS 5 -->
+
+            <div class="product-card">
+
+                <img src="./images/dress_7.jpeg"
+                     alt="Party Wear Ladies Dress">
+
+                <h3>Party Wear Ladies Dress</h3>
+
+                <p class="price">₹1,099</p>
+
+                <button onclick="addToCart('Party Wear Ladies Dress', 1099)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!--                    SAREES                         -->
+    <!-- ================================================= -->
+
+    <section class="products" id="sarees">
+
+        <h2>Sarees Collection</h2>
+
+        <div class="product-container">
+
+
+            <!-- SAREE 1 -->
+
+            <div class="product-card">
+
+                <img src="./images/saree.jpeg"
+                     alt="Beautiful Saree">
+
+                <h3>Beautiful Saree</h3>
+
+                <p class="price">₹899</p>
+
+                <button onclick="addToCart('Beautiful Saree', 899)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+
+            <!-- SAREE 2 -->
+
+            <div class="product-card">
+
+                <img src="./images/photo 4.jpeg"
+                     alt="Bandhini Saree">
+
+                <h3>Bandhini Saree</h3>
+
+                <p class="price">₹999</p>
+
+                <button onclick="addToCart('Bandhini Saree', 999)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+
+            <!-- SAREE 3 -->
+
+            <div class="product-card">
+
+                <img src="./images/photo 5.jpeg"
+                     alt="Blue Bandhini Saree">
+
+                <h3>Blue Bandhini Saree</h3>
+
+                <p class="price">₹999</p>
+
+                <button onclick="addToCart('Blue Bandhini Saree', 999)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+
+            <!-- SAREE 4 -->
+
+            <div class="product-card">
+
+                <img src="./images/designer.jpeg"
+                     alt="Designer Saree">
+
+                <h3>Designer Saree</h3>
+
+                <p class="price">₹1,199</p>
+
+                <button onclick="addToCart('Designer Saree', 1199)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+
+            <!-- SAREE 5 -->
+
+            <div class="product-card">
+
+                <img src="./images/traditional.jpeg"
+                     alt="Traditional Saree">
+
+                <h3>Traditional Saree</h3>
+
+                <p class="price">₹1,299</p>
+
+                <button onclick="addToCart('Traditional Saree', 1299)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!--                  KIDS DRESSES                     -->
+    <!-- ================================================= -->
+
+    <section class="products" id="kids">
+
+        <h2>Kids Dresses</h2>
+
+        <p class="section-description">
+            Beautiful and comfortable dresses for kids.
+        </p>
+
+        <div class="product-container">
+
+
+            <!-- KIDS 1 -->
+
+            <div class="product-card">
+
+                <img src="./images/kid 1.jpeg"
+                     alt="Kids Dress">
+
+                <h3>Beautiful Kids Dress</h3>
+
+                <p class="price">₹699</p>
+
+                <button onclick="addToCart('Beautiful Kids Dress', 699)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+
+            <!-- KIDS 2 -->
+
+            <div class="product-card">
+
+                <img src="./images/kid 2.jpeg"
+                     alt="Party Wear Kids Dress">
+
+                <h3>Party Wear Kids Dress</h3>
+
+                <p class="price">₹799</p>
+
+                <button onclick="addToCart('Party Wear Kids Dress', 799)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+
+            <!-- KIDS 3 -->
+
+            <div class="product-card">
+
+                <img src="./images/kid 3.jpeg"
+                     alt="Stylish Kids Dress">
+
+                <h3>Stylish Kids Dress</h3>
+
+                <p class="price">₹599</p>
+
+                <button onclick="addToCart('Stylish Kids Dress', 599)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!--                     CART                          -->
+    <!-- ================================================= -->
+
+    <section id="cart" class="cart-section">
+
+        <h2>🛒 Your Shopping Cart</h2>
+
+        <div id="cart-items"></div>
+
+        <h3 id="cart-total">Total: ₹0</h3>
+
+        <button onclick="checkout()">
+            Proceed to Checkout
+        </button>
+
+    </section>
+
+
+
+
+<!-- CHECKOUT -->
+
+<section class="checkout-section" id="checkout">
+
+    <h2>Checkout</h2>
+
+    <form id="checkoutForm">
+
+        <label>Full Name</label>
+        <input
+            type="text"
+            id="customerName"
+            placeholder="Enter your full name"
+            required
+        >
+
+        <label>Phone Number</label>
+        <input
+            type="tel"
+            id="customerPhone"
+            placeholder="Enter your phone number"
+            maxlength="10"
+            required
+        >
+
+        <label>Delivery Address</label>
+        <textarea
+            id="customerAddress"
+            placeholder="Enter your full address"
+            required
+        ></textarea>
+
+        <label>City</label>
+        <input
+            type="text"
+            id="customerCity"
+            placeholder="Enter your city"
+            required
+        >
+
+        <label>PIN Code</label>
+        <input
+            type="text"
+            id="customerPincode"
+            placeholder="Enter PIN code"
+            maxlength="6"
+            required
+        >
+
+        <button type="submit">
+            Place Order
+        </button>
+
+    </form>
+
+</section>
+
+    <!-- ================================================= -->
+    <!--                    CONTACT                         -->
+    <!-- ================================================= -->
+
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>📞 Contact us for more information</p>
+
+        <p>📍 Four Roads, Palamaner</p>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>© 2026 Kushi Collection Store</p>
+
+        <p>Four Roads, Palamaner</p>
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
