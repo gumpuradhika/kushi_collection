@@ -10,7 +10,7 @@ const PORT = 5000;
 app.use(express.json());
 
 // MongoDB connection
-const url = "mongodb+srv://gumpuradhika_db_user:radhika0204@cluster0.x8wt4la.mongodb.net/?appName=Cluster0";
+const url = process.env.MONGODB_URI;
 const client = new MongoClient(url);
 
 let db;
@@ -120,8 +120,12 @@ app.delete("/api/orders/:id", async (req, res) => {
 });
 
 // Start server
-app.listen(PORT, async () => {
+async function startServer() {
     await connectToMongoDB();
 
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+    app.listen(process.env.PORT || PORT, () => {
+        console.log(`Server is running on port ${process.env.PORT || PORT}`);
+    });
+}
+
+startServer();
